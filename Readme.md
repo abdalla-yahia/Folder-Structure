@@ -2,6 +2,7 @@
 This project follows a Modular Architecture pattern to ensure scalability, maintainability, and clear separation of concerns. Below is a detailed map of the directory structure.
 
 🌳 Directory Tree
+```
 src/
 ├── App.ts                 # Main Application entry component
 ├── index.ts               # Project bootstrap file
@@ -57,3 +58,4 @@ src/
 │
 ├── 📁 Styles/             # Global CSS and theming
 └── 📁 Validators/         # Global validation rules
+```
