@@ -1,0 +1,299 @@
+
+|   App.ts
+|   index.ts
+|   
++---Assets
+|   +---Audios
+|   +---Icons
+|   +---Images
+|   \---Jsons
++---Layouts
+|   +---Footer
+|   |       footer.module.css
+|   |       index.ts
+|   |       
+|   \---Header
+|           header.module.css
+|           index.ts
+|           
++---Modules
+|   +---Auth
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Auth.api.ts
+|   |   |       
+|   |   +---Store
+|   |   |       Auth.actions.ts
+|   |   |       Auth.slice.ts
+|   |   |       
+|   |   \---Validation
+|   +---Branches
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Branches.api.ts
+|   |   |       
+|   |   +---Store
+|   |   |       Branches.actions.ts
+|   |   |       Branches.slice.ts
+|   |   |       
+|   |   \---Validation
+|   +---Cash
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Cash.api.ts
+|   |   |       
+|   |   +---Store
+|   |   |       Cash.actions.ts
+|   |   |       Cash.slice.ts
+|   |   |       
+|   |   \---Validation
+|   +---Coupons
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Coupons.api.ts
+|   |   |       
+|   |   +---Store
+|   |   |       Coupons.actions.ts
+|   |   |       Coupons.slice.ts
+|   |   |       
+|   |   \---Validation
+|   +---Customers
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Customers.api.ts
+|   |   |       
+|   |   +---Store
+|   |   |       Customers.actions.ts
+|   |   |       Customers.slice.ts
+|   |   |       
+|   |   \---Validation
+|   +---Home
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Home.api.ts
+|   |   |       
+|   |   \---Validation
+|   +---Inventory
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Inventory.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Pos
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Pos.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Purchases
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Purchases.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Reports
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Reports.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Sales
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Sales.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Subscriptions
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Subscriptions.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   +---Suppliers
+|   |   |   index.ts
+|   |   |   
+|   |   +---Components
+|   |   +---Hooks
+|   |   +---Interfaces
+|   |   |       types.ts
+|   |   |       
+|   |   +---Pages
+|   |   +---Router
+|   |   |       index.ts
+|   |   |       
+|   |   +---Services
+|   |   |       Suppliers.api.ts
+|   |   |       
+|   |   +---Store
+|   |   \---Validation
+|   \---Users
+|       |   index.ts
+|       |   
+|       +---Components
+|       +---Hooks
+|       +---Interfaces
+|       |       types.ts
+|       |       
+|       +---Pages
+|       +---Router
+|       |       index.ts
+|       |       
+|       +---Services
+|       |       Users.api.ts
+|       |       
+|       +---Store
+|       \---Validation
++---Routers
+|       index.ts
+|       
++---Services
+|       Api.client.ts
+|       
++---Shared
+|   +---Components
+|   |       Main-Table.tsx
+|   |       
+|   +---Constants
+|   +---Hooks
+|   +---Ui
+|   |       Loader.tsx
+|   |       Primary-Button.tsx
+|   |       Secondary-Button.tsx
+|   |       Sidebar-Button.tsx
+|   |       
+|   \---Utils
++---Store
+|   |   Store.ts
+|   |   
+|   +---Actions
+|   \---Slices
++---Styles
+|       globalStyle.css
+|       
+\---Validators
